@@ -1,10 +1,9 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import Home from '../../Screens/Home';
-import Search from '../../Screens/Search';
-import SearchDetail from '../../Screens/SearchDetail';
-import MyDrawer from '../drawer/MyDrawer';
+import Home from '../../screens/Home';
+import Search from '../../screens/Search';
+import SearchDetail from '../../screens/SearchDetail';
 
 const Stack = createStackNavigator();
 

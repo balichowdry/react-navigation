@@ -1,8 +1,7 @@
 import React from 'react';
-import {useWindowDimensions} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import Search from '../../Screens/Search';
-import SearchDetail from '../../Screens/SearchDetail';
+import Search from '../../screens/Search';
+import SearchDetail from '../../screens/SearchDetail';
 
 const Drawer = createDrawerNavigator();
 
