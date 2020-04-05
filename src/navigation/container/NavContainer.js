@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../../../Screens/Home';
-import Search from '../../../Screens/Search';
-import SearchDetail from '../../../Screens/SearchDetail';
-// import MyDrawer from './src/navigation/drawer/MyDrawer';
+import Home from '../../Screens/Home';
+import Search from '../../Screens/Search';
+import SearchDetail from '../../Screens/SearchDetail';
+import MyDrawer from '../drawer/MyDrawer';
 
 const Stack = createStackNavigator();
 
@@ -41,7 +41,7 @@ function NavStack() {
     );
 }
 
-const Container = () => {
+const NavContainer = () => {
     return (
         <NavigationContainer>
             <NavStack />
@@ -49,6 +49,6 @@ const Container = () => {
     );
 }
 
-export default Container;
+export default NavContainer;
 
 

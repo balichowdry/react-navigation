@@ -7,10 +7,13 @@ import SearchDetail from '../../Screens/SearchDetail';
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
-    const dimensions = useWindowDimensions();
-
     return (
-        <Drawer.Navigator drawerType={dimensions.width > 900 ? 'permanent' : 'front'}>
+        <Drawer.Navigator
+            drawerStyle={{
+            backgroundColor: '#c6cbef',
+            width: 240,
+        }}
+        >
             <Drawer.Screen name="Search" component={Search} />
             <Drawer.Screen name="SearchDetail" component={SearchDetail} />
         </Drawer.Navigator>

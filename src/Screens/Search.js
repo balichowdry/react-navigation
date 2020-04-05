@@ -5,7 +5,7 @@ import { Button, View, Text } from 'react-native';
 
 class Search extends Component {
     render() {
-        const { searchId } = this.props.route.params;
+        const { searchId } = this.props.route.params || 'Default';
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Search screen + {searchId} </Text>
