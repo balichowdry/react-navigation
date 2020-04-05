@@ -11,11 +11,11 @@ import Container from './src/navigation/container/Container';
 import DrawerContainer from './src/navigation/container/DrawerContainer';
 
 const App = () => {
-    return (
-        <>
-          <Container />
-          </>
-    );
+  return (
+    <>
+      <Container />
+    </>
+  );
 };
 
 export default App;
