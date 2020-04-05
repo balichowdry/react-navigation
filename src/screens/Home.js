@@ -1,20 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Button, View, Text} from 'react-native';
+import {useNavigation} from '@react-navigation/core';
 
-class Home extends Component {
-  render() {
-    return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Home screen</Text>
-        <Button
-          title="Go to Search"
-          onPress={() =>
-            this.props.navigation.navigate('Search', {searchId: '123'})
-          }
-        />
-      </View>
-    );
-  }
+export default function Home() {
+  const navigation = useNavigation();
+  const navigateToSearh = () => {
+    navigation.navigate('Search');
+    navigation.push('Search', {searchId: '123'});
+  };
+  return (
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home screen</Text>
+      <Button title="Go to Search" onPress={() => navigateToSearh()} />
+    </View>
+  );
 }
-
-export default Home;
