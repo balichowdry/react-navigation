@@ -7,9 +7,7 @@ import {
 } from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {
-  createStackNavigator,
-} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../../screens/Home';
 import Search from '../../screens/Search';
 import SearchDetail from '../../screens/SearchDetail';
