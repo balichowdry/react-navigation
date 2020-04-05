@@ -8,7 +8,7 @@ class Home extends Component {
                 <Text>Home screen</Text>
                 <Button
                     title="Go to Search"
-                    onPress={() => this.props.navigation.navigate('Search')}
+                    onPress={() => this.props.navigation.navigate('Search', {searchId: '123'})}
                 />
             </View>
         );
