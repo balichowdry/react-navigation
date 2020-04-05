@@ -3,7 +3,7 @@ V5
 Added Basic React-Navigation V5 usage
 Drawer, Navigation, Tab
 
-*Prerequisites*
+# Prerequisites*
 
 - Android Studio
 - Xcode + CocoaPods
