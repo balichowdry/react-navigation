@@ -17,7 +17,7 @@ To init the project, run the following commands:
 yarn
 
 # running dev server
-yarn start --help
+yarn start
 
 # start Android App 
 yarn android
